@@ -17,8 +17,10 @@ const Home = () => {
   return (
     <Fragment>
       <NavBar />
-      <SearchUser onSubmit={handleOnSubmit} />
-      {showData && <Users data={userData} />}
+      <div className="container">
+        <SearchUser onSubmit={handleOnSubmit} />
+        {showData && <Users data={userData} />}
+      </div>
     </Fragment>
   );
 };

@@ -1,0 +1,16 @@
+header {
+  background-color: $Blue;
+  padding: 1rem;
+
+  nav {
+    padding-inline: 2em;
+    max-width: 1000px;
+    margin-inline: auto;
+
+    li {
+      font-size: 2rem;
+      list-style: none;
+      font-weight: 600;
+    }
+  }
+}

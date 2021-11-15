@@ -1,0 +1,26 @@
+.user__profile {
+  height: 100%;
+  padding: 2rem 1rem;
+  @include centerFlexDirectionColumn;
+  //   box-shadow: -1px 1px 5px 0px rgba(121, 121, 121, 0.3);
+  //   -webkit-box-shadow: -1px 1px 5px 0px rgba(121, 121, 121, 0.3);
+  //   -moz-box-shadow: -1px 1px 5px 0px rgba(121, 121, 121, 0.3);
+  background-color: $Light-Black;
+  border-radius: 0.5rem;
+
+  h2 {
+    margin: 1rem 0;
+    color: $White;
+  }
+
+  img {
+    width: 6rem;
+    border-radius: 100%;
+  }
+}
+
+.users__profiles__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 3rem;
+}

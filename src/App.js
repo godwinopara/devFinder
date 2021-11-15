@@ -1,10 +1,12 @@
+import { Fragment } from "react";
 import Home from "./pages/Home";
+import "./scss/main.scss";
 
 function App() {
   return (
-    <div>
+    <Fragment>
       <Home />
-    </div>
+    </Fragment>
   );
 }
 
