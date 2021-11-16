@@ -1,0 +1,68 @@
+.user__wrapper {
+  background: $Light-Black;
+  margin: 2rem auto;
+  padding: 2rem 5rem;
+  border-radius: 0.3rem;
+}
+
+.profile__details {
+  margin-left: 3rem;
+
+  & > p {
+    margin-bottom: 0.8rem;
+  }
+
+  .github__link {
+    background: $Blue;
+    padding: 0.7rem 1.5rem;
+    display: inline-block;
+    text-align: center;
+  }
+}
+
+.grid {
+  @include grid;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 15rem;
+    border-radius: 100%;
+  }
+}
+
+.grid:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.grid:nth-child(3) {
+  background: $Blue;
+  padding: 0.8rem 0;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.bio {
+  width: 80%;
+}
+
+.location__and__website {
+  img {
+    width: 1.5rem;
+    margin-right: 1rem;
+  }
+}
+
+#hireable,
+#not-hireable,
+#email {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+  color: $Blue;
+}
