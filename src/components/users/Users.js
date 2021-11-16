@@ -1,10 +1,13 @@
+import { useContext } from "react";
 import UserList from "./UserList";
+import GithubContext from "../../context/githubContext/context";
+const Users = () => {
+  const { users } = useContext(GithubContext);
 
-const Users = ({ data }) => {
   return (
     <div className="users__profiles__wrapper">
-      {data.map((userData) => {
-        return <UserList name={userData.login} img={userData.avatar_url} key={userData.id} />;
+      {users.map((userData) => {
+        return <UserList key={userData.id} name={userData.login} img={userData.avatar_url} />;
       })}
     </div>
   );

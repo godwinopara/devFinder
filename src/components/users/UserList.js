@@ -1,11 +1,11 @@
 import React from "react";
 
-const UserList = ({ name, img }) => {
+const UserList = ({ name, img, onClick }) => {
   return (
     <div className="user__profile">
       <img src={img} alt="" />
       <h2>{name}</h2>
-      <button>View Profile</button>
+      <button onClick={onClick}>View Profile</button>
     </div>
   );
 };
