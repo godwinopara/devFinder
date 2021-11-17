@@ -1,14 +1,6 @@
-// import { useContext } from "react";
 import { Link } from "react-router-dom";
-// import GithubContext from "../../context/githubContext/context";
 
 const UserList = ({ name, img }) => {
-  // const { getUser } = useContext(GithubContext);
-
-  // const handleOnClick = () => {
-  //   getUser(name);
-  // };
-
   return (
     <div className="user__profile">
       <img src={img} alt="" />
@@ -21,4 +13,3 @@ const UserList = ({ name, img }) => {
 };
 
 export default UserList;
-// onClick = { handleOnClick };
